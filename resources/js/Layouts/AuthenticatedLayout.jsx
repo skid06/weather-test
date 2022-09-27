@@ -16,7 +16,8 @@ export default function Authenticated({ auth, header, children }) {
                         <div className="flex">
                             <div className="shrink-0 flex items-center">
                                 <Link href="/">
-                                    <ApplicationLogo className="block h-9 w-auto text-gray-500" />
+                                    {/* <ApplicationLogo className="block h-9 w-auto text-gray-500" /> */}
+                                    <img typeof="foaf:Image" src="https://www.accuweather.com/images/weathericons/03.svg" width="75" height="45" alt="ModerateRain" title="ModerateRain"></img>
                                 </Link>
                             </div>
 

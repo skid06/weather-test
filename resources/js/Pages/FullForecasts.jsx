@@ -63,8 +63,8 @@ export default function FullForecasts(props) {
             auth={props.auth}
             errors={props.errors}
             header={
-                <h2 className="font-semibold text-xl text-gray-800 leading-tight">
-                    Weather
+                <h2 className="font-semibold text-center text-xl text-gray-800 leading-tight">
+                    Today's Weather
                 </h2>
             }
         >

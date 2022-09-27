@@ -4,15 +4,14 @@ Weather Test App built with Laravel as backend and React as frontend and interac
 
 ## Steps to follow:
 
-1. Install docker app into your computer.
-2. [Clone the git repository.](https://github.com/skid06/weather-test)
-3. Go to the project directory.
-4. run the following commands using terminal:
+1. Install [docker app](https://www.docker.com/) into your computer and register if not yet registered.
+2. Clone this [git repository.](https://github.com/skid06/weather-test)
+3. Go to the project directory and run the following commands using terminal:
 
 -   php artisan sail:install
 -   alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
-5. Copy .env.example to .env file. Fill in the environment variables.
+4. Copy .env.example to .env file. Fill in the environment variables.
 
 [Grocery Online Shopping App Monolithic](https://github.com/codergogoi/Grocery_Online_Shopping_App)
 

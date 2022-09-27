@@ -37,7 +37,7 @@ Route::get('/profile', function () {
 Route::get('/weather', function () {
     return Inertia::render('Weather', [
         'ip' => request()->ip(),
-        'subscription' => 1,// auth()->user()->subscription,
+        'subscription' => 0,// auth()->user()->subscription,
     ]);
 })->middleware(['auth', 'verified'])->name('weather');
 

@@ -55,8 +55,8 @@ export default function Dashboard(props) {
             auth={props.auth}
             errors={props.errors}
             header={
-                <h2 className="font-semibold text-xl text-gray-800 leading-tight">
-                    Weather
+                <h2 className="font-semibold text-center text-xl text-gray-800 leading-tight">
+                    Weather Forecasts
                 </h2>
             }
         >
@@ -65,9 +65,9 @@ export default function Dashboard(props) {
             <div className="py-12">
                 <div className="max-w-5xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <div className="p-6 bg-white border-b border-gray-200">
+                        {/* <div className="p-6 bg-white border-b border-gray-200">
                             Weather Page
-                        </div>
+                        </div> */}
                         {/*  Start */}
                         <div className="text-white">
                             {/* <div className="places-input text-gray-800">
@@ -80,7 +80,7 @@ export default function Dashboard(props) {
 
                                     if(index == 0){
                                         return (
-                                            <div key={index} className="weather-container font-sans md:w-128 max-w-full rounded-lg overflow-hidden bg-gray-900 shadow-lg mt-8">
+                                            <div key={index} className="weather-container font-sans md:w-128 max-w-full overflow-hidden bg-gray-900 shadow-lg">
                                                 <div className="current-weather mt-4 mb-4 flex flex-row items-center justify-around">
                                                     <div className="w-1/4 text-center">
                                                         <div>
