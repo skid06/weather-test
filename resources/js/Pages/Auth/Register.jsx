@@ -4,15 +4,19 @@ import InputError from '@/Components/InputError';
 import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
 import TextInput from '@/Components/TextInput';
+import Checkbox from '@/Components/Checkbox';
 import { Head, Link, useForm } from '@inertiajs/inertia-react';
 
 export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({
         name: '',
         email: '',
+        terms: false,
         password: '',
         password_confirmation: '',
     });
+
+    const canSave = [data.name, data.email, data.password, data.password_confirmation, data.terms].every(Boolean)
 
     useEffect(() => {
         return () => {
@@ -29,7 +33,7 @@ export default function Register() {
 
         post(route('register'));
     };
-
+    console.log(canSave)
     return (
         <GuestLayout>
             <Head title="Register" />
@@ -46,7 +50,7 @@ export default function Register() {
                         autoComplete="name"
                         isFocused={true}
                         handleChange={onHandleChange}
-                        required
+                        
                     />
 
                     <InputError message={errors.name} className="mt-2" />
@@ -62,7 +66,7 @@ export default function Register() {
                         className="mt-1 block w-full"
                         autoComplete="username"
                         handleChange={onHandleChange}
-                        required
+                        
                     />
 
                     <InputError message={errors.email} className="mt-2" />
@@ -78,7 +82,7 @@ export default function Register() {
                         className="mt-1 block w-full"
                         autoComplete="new-password"
                         handleChange={onHandleChange}
-                        required
+                        
                     />
 
                     <InputError message={errors.password} className="mt-2" />
@@ -93,10 +97,25 @@ export default function Register() {
                         value={data.password_confirmation}
                         className="mt-1 block w-full"
                         handleChange={onHandleChange}
-                        required
+                        
                     />
 
                     <InputError message={errors.password_confirmation} className="mt-2" />
+                </div>
+
+                <div className="mt-4 flex flex-row">
+                
+                    <Checkbox
+                        type="checkbox"
+                        name="terms"
+                        value={data.terms}
+                        className="mt-1 block w-full"
+                        handleChange={onHandleChange}
+                        
+                    />
+
+                    <InputLabel forInput="terms" value="By using the app for free and get access to free 3 day forecast, I agree to the Terms of Service and Privacy Policy" className="ml-4" />
+
                 </div>
 
                 <div className="flex items-center justify-end mt-4">
@@ -104,7 +123,7 @@ export default function Register() {
                         Already registered?
                     </Link>
 
-                    <PrimaryButton className="ml-4" processing={processing}>
+                    <PrimaryButton className="ml-4" processing={!canSave}>
                         Register
                     </PrimaryButton>
                 </div>
