@@ -2,7 +2,7 @@
 
 Weather Test App built with Laravel as backend and React as frontend and interacting with Accuweather API.
 
-## Steps to follow:
+## Steps to run the application:
 
 1. Install [docker app](https://www.docker.com/) into your computer and register if not yet registered.
 2. Install [composer](https://getcomposer.org/) into your computer.
@@ -57,4 +57,6 @@ Weather Test App built with Laravel as backend and React as frontend and interac
 
 18. Open a browser window and type "http://localhost:3000" you should change the port to the value you set for APP_PORT i.e APP_PORT=5000 then acccess the site with http://localhost:5000
 
-## NOTE: If you keep having errors running sail up and gets the Port number is already in use, just make sure to change the values for APP_PORT, FORWARD_DB_PORT and VITE_PORT in the .env file
+## NOTE:
+
+If you keep having errors running sail up and gets the Port number is already in use, just make sure to change the values for APP_PORT, FORWARD_DB_PORT and VITE_PORT in the .env file
