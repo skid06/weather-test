@@ -15,20 +15,20 @@ export default function Dashboard(props) {
     const accuweather_key = props.accuweather_key
 
     const forecast = async () => {
-        // fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/265720?details=true&apikey=${accuweather_key}`)
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         if(subscription == 0) {
-        //             setDays(data.DailyForecasts.splice(0, 3));
-        //         } else if(subscription == 1) {
-        //             setDays(data.DailyForecasts);
-        //         } 
-        //     });
-        if(subscription == 0) {
-            setDays(weatherData.DailyForecasts.splice(0, 3));
-        } else if(subscription == 1) {
-            setDays(weatherData.DailyForecasts);
-        } 
+        fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/265720?details=true&apikey=${accuweather_key}`)
+            .then(response => response.json())
+            .then(data => {
+                if(subscription == 0) {
+                    setDays(data.DailyForecasts.splice(0, 3));
+                } else if(subscription == 1) {
+                    setDays(data.DailyForecasts);
+                } 
+            });
+        // if(subscription == 0) {
+        //     setDays(weatherData.DailyForecasts.splice(0, 3));
+        // } else if(subscription == 1) {
+        //     setDays(weatherData.DailyForecasts);
+        // } 
     }   
 
     useEffect(() => forecast(), []);

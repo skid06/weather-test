@@ -57,6 +57,9 @@ Weather Test App built with Laravel as backend and React as frontend and interac
 
 18. Open a browser window and type "http://localhost:3000" you should change the port to the value you set for APP_PORT i.e APP_PORT=5000 then acccess the site with http://localhost:5000
 
+19. To change the API KEY for Accuweather, just go to the .env file and change the value for ACCUWEATHER_KEY
+20. You can also mimic the behavior if the user is on free trial or paid user which is not included in the functionality of the app. Just change the value of USER_SUBSCRIPTION_KEY in the .env file to 1 so it will not be limited to only 3 day forecast.
+
 ## NOTE:
 
 If you keep having errors running sail up and gets the Port number is already in use, just make sure to change the values for APP_PORT, FORWARD_DB_PORT and VITE_PORT in the .env file
