@@ -32,7 +32,7 @@ export default function FullForecasts(props) {
             <div className="py-12">
                 <div className="max-w-5xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <div className="text-white mb-8">  
+                        {/* <div className="text-white mb-8">  
                             <div className="weather-container font-sans md:w-128 max-w-full overflow-hidden bg-gray-900 shadow-lg">
                                 <div className="m-4 flex flex-row items-right">
                                     <div className="w-1/2">
@@ -71,7 +71,7 @@ export default function FullForecasts(props) {
                                 <div className="w-1/5"></div>
                                 <div className="w-2/5 text-center mb-3">Real Feel Max Temperature: {details.RealFeelTemperature.Maximum.Value}°{details.RealFeelTemperature.Maximum.Unit} <br /> {details.RealFeelTemperature.Minimum.Phrase}</div>
                             </div> 
-                        </div>
+                        </div> */}
                         <div className="text-white mb-8">  
                             <div className="weather-container font-sans md:w-128 max-w-full overflow-hidden bg-gray-900 shadow-lg">
                                 <div className="m-4 flex flex-row items-right">
