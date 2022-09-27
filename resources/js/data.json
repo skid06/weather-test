@@ -1,0 +1,1320 @@
+{
+	"Headline": {
+		"EffectiveDate": "2022-09-26T13:00:00+08:00",
+		"EffectiveEpochDate": 1664168400,
+		"Severity": 3,
+		"Text": "Thunderstorms in the area Monday afternoon through Tuesday evening",
+		"Category": "thunderstorm",
+		"EndDate": "2022-09-28T01:00:00+08:00",
+		"EndEpochDate": 1664298000,
+		"MobileLink": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?lang=en-us",
+		"Link": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?lang=en-us"
+	},
+	"DailyForecasts": [
+		{
+			"Date": "2022-09-26T07:00:00+08:00",
+			"EpochDate": 1664146800,
+			"Sun": {
+				"Rise": "2022-09-26T05:43:00+08:00",
+				"EpochRise": 1664142180,
+				"Set": "2022-09-26T17:47:00+08:00",
+				"EpochSet": 1664185620
+			},
+			"Moon": {
+				"Rise": "2022-09-26T05:49:00+08:00",
+				"EpochRise": 1664142540,
+				"Set": "2022-09-26T18:10:00+08:00",
+				"EpochSet": 1664187000,
+				"Phase": "New",
+				"Age": 0
+			},
+			"Temperature": {
+				"Minimum": {
+					"Value": 77.0,
+					"Unit": "F",
+					"UnitType": 18
+				},
+				"Maximum": {
+					"Value": 98.0,
+					"Unit": "F",
+					"UnitType": 18
+				}
+			},
+			"RealFeelTemperature": {
+				"Minimum": {
+					"Value": 81.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Pleasant"
+				},
+				"Maximum": {
+					"Value": 105.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Very Hot"
+				}
+			},
+			"RealFeelTemperatureShade": {
+				"Minimum": {
+					"Value": 81.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Pleasant"
+				},
+				"Maximum": {
+					"Value": 103.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Very Hot"
+				}
+			},
+			"HoursOfSun": 1.1,
+			"DegreeDaySummary": {
+				"Heating": {
+					"Value": 0.0,
+					"Unit": "F",
+					"UnitType": 18
+				},
+				"Cooling": {
+					"Value": 22.0,
+					"Unit": "F",
+					"UnitType": 18
+				}
+			},
+			"AirAndPollen": [
+				{
+					"Name": "AirQuality",
+					"Value": 0,
+					"Category": "Good",
+					"CategoryValue": 1,
+					"Type": "Ozone"
+				},
+				{
+					"Name": "Grass",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Mold",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Ragweed",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Tree",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "UVIndex",
+					"Value": 5,
+					"Category": "Moderate",
+					"CategoryValue": 2
+				}
+			],
+			"Day": {
+				"Icon": 15,
+				"IconPhrase": "Thunderstorms",
+				"HasPrecipitation": true,
+				"PrecipitationType": "Rain",
+				"PrecipitationIntensity": "Heavy",
+				"ShortPhrase": "Cloudy, a t-storm; warmer",
+				"LongPhrase": "Cloudy and warmer with a thunderstorm",
+				"PrecipitationProbability": 95,
+				"ThunderstormProbability": 57,
+				"RainProbability": 95,
+				"SnowProbability": 0,
+				"IceProbability": 0,
+				"Wind": {
+					"Speed": {
+						"Value": 6.9,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 159,
+						"Localized": "SSE",
+						"English": "SSE"
+					}
+				},
+				"WindGust": {
+					"Speed": {
+						"Value": 18.4,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 155,
+						"Localized": "SSE",
+						"English": "SSE"
+					}
+				},
+				"TotalLiquid": {
+					"Value": 0.5,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Rain": {
+					"Value": 0.5,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Snow": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Ice": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"HoursOfPrecipitation": 1.5,
+				"HoursOfRain": 1.5,
+				"HoursOfSnow": 0.0,
+				"HoursOfIce": 0.0,
+				"CloudCover": 99,
+				"Evapotranspiration": {
+					"Value": 0.12,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"SolarIrradiance": {
+					"Value": 2291.0,
+					"Unit": "W/m²",
+					"UnitType": 33
+				}
+			},
+			"Night": {
+				"Icon": 15,
+				"IconPhrase": "Thunderstorms",
+				"HasPrecipitation": true,
+				"PrecipitationType": "Rain",
+				"PrecipitationIntensity": "Light",
+				"ShortPhrase": "Rain and a thunderstorm late",
+				"LongPhrase": "Cloudy; a thunderstorm this evening followed by rain and a thunderstorm late",
+				"PrecipitationProbability": 94,
+				"ThunderstormProbability": 56,
+				"RainProbability": 94,
+				"SnowProbability": 0,
+				"IceProbability": 0,
+				"Wind": {
+					"Speed": {
+						"Value": 3.5,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 143,
+						"Localized": "SE",
+						"English": "SE"
+					}
+				},
+				"WindGust": {
+					"Speed": {
+						"Value": 10.4,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 122,
+						"Localized": "ESE",
+						"English": "ESE"
+					}
+				},
+				"TotalLiquid": {
+					"Value": 0.23,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Rain": {
+					"Value": 0.23,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Snow": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Ice": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"HoursOfPrecipitation": 3.0,
+				"HoursOfRain": 3.0,
+				"HoursOfSnow": 0.0,
+				"HoursOfIce": 0.0,
+				"CloudCover": 100,
+				"Evapotranspiration": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"SolarIrradiance": {
+					"Value": 15.0,
+					"Unit": "W/m²",
+					"UnitType": 33
+				}
+			},
+			"Sources": [
+				"AccuWeather"
+			],
+			"MobileLink": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?day=1&lang=en-us",
+			"Link": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?day=1&lang=en-us"
+		},
+		{
+			"Date": "2022-09-27T07:00:00+08:00",
+			"EpochDate": 1664233200,
+			"Sun": {
+				"Rise": "2022-09-27T05:43:00+08:00",
+				"EpochRise": 1664228580,
+				"Set": "2022-09-27T17:47:00+08:00",
+				"EpochSet": 1664272020
+			},
+			"Moon": {
+				"Rise": "2022-09-27T06:39:00+08:00",
+				"EpochRise": 1664231940,
+				"Set": "2022-09-27T18:49:00+08:00",
+				"EpochSet": 1664275740,
+				"Phase": "WaxingCrescent",
+				"Age": 1
+			},
+			"Temperature": {
+				"Minimum": {
+					"Value": 76.0,
+					"Unit": "F",
+					"UnitType": 18
+				},
+				"Maximum": {
+					"Value": 89.0,
+					"Unit": "F",
+					"UnitType": 18
+				}
+			},
+			"RealFeelTemperature": {
+				"Minimum": {
+					"Value": 80.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Pleasant"
+				},
+				"Maximum": {
+					"Value": 101.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Very Hot"
+				}
+			},
+			"RealFeelTemperatureShade": {
+				"Minimum": {
+					"Value": 80.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Pleasant"
+				},
+				"Maximum": {
+					"Value": 98.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Hot"
+				}
+			},
+			"HoursOfSun": 1.0,
+			"DegreeDaySummary": {
+				"Heating": {
+					"Value": 0.0,
+					"Unit": "F",
+					"UnitType": 18
+				},
+				"Cooling": {
+					"Value": 18.0,
+					"Unit": "F",
+					"UnitType": 18
+				}
+			},
+			"AirAndPollen": [
+				{
+					"Name": "AirQuality",
+					"Value": 0,
+					"Category": "Good",
+					"CategoryValue": 1,
+					"Type": "Ozone"
+				},
+				{
+					"Name": "Grass",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Mold",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Ragweed",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Tree",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "UVIndex",
+					"Value": 3,
+					"Category": "Moderate",
+					"CategoryValue": 2
+				}
+			],
+			"Day": {
+				"Icon": 15,
+				"IconPhrase": "Thunderstorms",
+				"HasPrecipitation": true,
+				"PrecipitationType": "Rain",
+				"PrecipitationIntensity": "Heavy",
+				"ShortPhrase": "Some rain and a thunderstorm",
+				"LongPhrase": "Cloudy; a morning thunderstorm in parts of the area followed by occasional rain and a thunderstorm in the afternoon",
+				"PrecipitationProbability": 91,
+				"ThunderstormProbability": 55,
+				"RainProbability": 91,
+				"SnowProbability": 0,
+				"IceProbability": 0,
+				"Wind": {
+					"Speed": {
+						"Value": 4.6,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 151,
+						"Localized": "SSE",
+						"English": "SSE"
+					}
+				},
+				"WindGust": {
+					"Speed": {
+						"Value": 13.8,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 159,
+						"Localized": "SSE",
+						"English": "SSE"
+					}
+				},
+				"TotalLiquid": {
+					"Value": 0.77,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Rain": {
+					"Value": 0.77,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Snow": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Ice": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"HoursOfPrecipitation": 4.0,
+				"HoursOfRain": 4.0,
+				"HoursOfSnow": 0.0,
+				"HoursOfIce": 0.0,
+				"CloudCover": 100,
+				"Evapotranspiration": {
+					"Value": 0.08,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"SolarIrradiance": {
+					"Value": 2269.5,
+					"Unit": "W/m²",
+					"UnitType": 33
+				}
+			},
+			"Night": {
+				"Icon": 15,
+				"IconPhrase": "Thunderstorms",
+				"HasPrecipitation": true,
+				"PrecipitationType": "Rain",
+				"PrecipitationIntensity": "Heavy",
+				"ShortPhrase": "A thunderstorm early; clouds",
+				"LongPhrase": "A thunderstorm in the evening; otherwise, cloudy",
+				"PrecipitationProbability": 86,
+				"ThunderstormProbability": 52,
+				"RainProbability": 86,
+				"SnowProbability": 0,
+				"IceProbability": 0,
+				"Wind": {
+					"Speed": {
+						"Value": 3.5,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 339,
+						"Localized": "NNW",
+						"English": "NNW"
+					}
+				},
+				"WindGust": {
+					"Speed": {
+						"Value": 10.4,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 342,
+						"Localized": "NNW",
+						"English": "NNW"
+					}
+				},
+				"TotalLiquid": {
+					"Value": 0.62,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Rain": {
+					"Value": 0.62,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Snow": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Ice": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"HoursOfPrecipitation": 2.0,
+				"HoursOfRain": 2.0,
+				"HoursOfSnow": 0.0,
+				"HoursOfIce": 0.0,
+				"CloudCover": 99,
+				"Evapotranspiration": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"SolarIrradiance": {
+					"Value": 15.3,
+					"Unit": "W/m²",
+					"UnitType": 33
+				}
+			},
+			"Sources": [
+				"AccuWeather"
+			],
+			"MobileLink": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?day=2&lang=en-us",
+			"Link": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?day=2&lang=en-us"
+		},
+		{
+			"Date": "2022-09-28T07:00:00+08:00",
+			"EpochDate": 1664319600,
+			"Sun": {
+				"Rise": "2022-09-28T05:43:00+08:00",
+				"EpochRise": 1664314980,
+				"Set": "2022-09-28T17:46:00+08:00",
+				"EpochSet": 1664358360
+			},
+			"Moon": {
+				"Rise": "2022-09-28T07:32:00+08:00",
+				"EpochRise": 1664321520,
+				"Set": "2022-09-28T19:30:00+08:00",
+				"EpochSet": 1664364600,
+				"Phase": "WaxingCrescent",
+				"Age": 2
+			},
+			"Temperature": {
+				"Minimum": {
+					"Value": 75.0,
+					"Unit": "F",
+					"UnitType": 18
+				},
+				"Maximum": {
+					"Value": 86.0,
+					"Unit": "F",
+					"UnitType": 18
+				}
+			},
+			"RealFeelTemperature": {
+				"Minimum": {
+					"Value": 79.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Pleasant"
+				},
+				"Maximum": {
+					"Value": 98.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Hot"
+				}
+			},
+			"RealFeelTemperatureShade": {
+				"Minimum": {
+					"Value": 79.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Pleasant"
+				},
+				"Maximum": {
+					"Value": 94.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Hot"
+				}
+			},
+			"HoursOfSun": 1.0,
+			"DegreeDaySummary": {
+				"Heating": {
+					"Value": 0.0,
+					"Unit": "F",
+					"UnitType": 18
+				},
+				"Cooling": {
+					"Value": 15.0,
+					"Unit": "F",
+					"UnitType": 18
+				}
+			},
+			"AirAndPollen": [
+				{
+					"Name": "AirQuality",
+					"Value": 0,
+					"Category": "Good",
+					"CategoryValue": 1,
+					"Type": "Ozone"
+				},
+				{
+					"Name": "Grass",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Mold",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Ragweed",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Tree",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "UVIndex",
+					"Value": 4,
+					"Category": "Moderate",
+					"CategoryValue": 2
+				}
+			],
+			"Day": {
+				"Icon": 15,
+				"IconPhrase": "Thunderstorms",
+				"HasPrecipitation": true,
+				"PrecipitationType": "Rain",
+				"PrecipitationIntensity": "Moderate",
+				"ShortPhrase": "Cloudy with a thunderstorm",
+				"LongPhrase": "Cloudy with a thunderstorm",
+				"PrecipitationProbability": 80,
+				"ThunderstormProbability": 48,
+				"RainProbability": 80,
+				"SnowProbability": 0,
+				"IceProbability": 0,
+				"Wind": {
+					"Speed": {
+						"Value": 4.6,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 143,
+						"Localized": "SE",
+						"English": "SE"
+					}
+				},
+				"WindGust": {
+					"Speed": {
+						"Value": 10.4,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 168,
+						"Localized": "SSE",
+						"English": "SSE"
+					}
+				},
+				"TotalLiquid": {
+					"Value": 0.36,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Rain": {
+					"Value": 0.36,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Snow": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Ice": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"HoursOfPrecipitation": 2.0,
+				"HoursOfRain": 2.0,
+				"HoursOfSnow": 0.0,
+				"HoursOfIce": 0.0,
+				"CloudCover": 99,
+				"Evapotranspiration": {
+					"Value": 0.08,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"SolarIrradiance": {
+					"Value": 2263.5,
+					"Unit": "W/m²",
+					"UnitType": 33
+				}
+			},
+			"Night": {
+				"Icon": 7,
+				"IconPhrase": "Cloudy",
+				"HasPrecipitation": true,
+				"PrecipitationType": "Rain",
+				"PrecipitationIntensity": "Moderate",
+				"ShortPhrase": "An evening t-shower in spots",
+				"LongPhrase": "A thundershower in spots in the evening; otherwise, cloudy",
+				"PrecipitationProbability": 55,
+				"ThunderstormProbability": 21,
+				"RainProbability": 55,
+				"SnowProbability": 0,
+				"IceProbability": 0,
+				"Wind": {
+					"Speed": {
+						"Value": 3.5,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 18,
+						"Localized": "NNE",
+						"English": "NNE"
+					}
+				},
+				"WindGust": {
+					"Speed": {
+						"Value": 10.4,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 342,
+						"Localized": "NNW",
+						"English": "NNW"
+					}
+				},
+				"TotalLiquid": {
+					"Value": 0.25,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Rain": {
+					"Value": 0.25,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Snow": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Ice": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"HoursOfPrecipitation": 2.0,
+				"HoursOfRain": 2.0,
+				"HoursOfSnow": 0.0,
+				"HoursOfIce": 0.0,
+				"CloudCover": 100,
+				"Evapotranspiration": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"SolarIrradiance": {
+					"Value": 14.9,
+					"Unit": "W/m²",
+					"UnitType": 33
+				}
+			},
+			"Sources": [
+				"AccuWeather"
+			],
+			"MobileLink": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?day=3&lang=en-us",
+			"Link": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?day=3&lang=en-us"
+		},
+		{
+			"Date": "2022-09-29T07:00:00+08:00",
+			"EpochDate": 1664406000,
+			"Sun": {
+				"Rise": "2022-09-29T05:43:00+08:00",
+				"EpochRise": 1664401380,
+				"Set": "2022-09-29T17:45:00+08:00",
+				"EpochSet": 1664444700
+			},
+			"Moon": {
+				"Rise": "2022-09-29T08:26:00+08:00",
+				"EpochRise": 1664411160,
+				"Set": "2022-09-29T20:14:00+08:00",
+				"EpochSet": 1664453640,
+				"Phase": "WaxingCrescent",
+				"Age": 3
+			},
+			"Temperature": {
+				"Minimum": {
+					"Value": 75.0,
+					"Unit": "F",
+					"UnitType": 18
+				},
+				"Maximum": {
+					"Value": 87.0,
+					"Unit": "F",
+					"UnitType": 18
+				}
+			},
+			"RealFeelTemperature": {
+				"Minimum": {
+					"Value": 80.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Pleasant"
+				},
+				"Maximum": {
+					"Value": 98.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Hot"
+				}
+			},
+			"RealFeelTemperatureShade": {
+				"Minimum": {
+					"Value": 80.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Pleasant"
+				},
+				"Maximum": {
+					"Value": 94.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Hot"
+				}
+			},
+			"HoursOfSun": 1.0,
+			"DegreeDaySummary": {
+				"Heating": {
+					"Value": 0.0,
+					"Unit": "F",
+					"UnitType": 18
+				},
+				"Cooling": {
+					"Value": 16.0,
+					"Unit": "F",
+					"UnitType": 18
+				}
+			},
+			"AirAndPollen": [
+				{
+					"Name": "AirQuality",
+					"Value": 0,
+					"Category": "Good",
+					"CategoryValue": 1,
+					"Type": "Ozone"
+				},
+				{
+					"Name": "Grass",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Mold",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Ragweed",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Tree",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "UVIndex",
+					"Value": 4,
+					"Category": "Moderate",
+					"CategoryValue": 2
+				}
+			],
+			"Day": {
+				"Icon": 12,
+				"IconPhrase": "Showers",
+				"HasPrecipitation": true,
+				"PrecipitationType": "Rain",
+				"PrecipitationIntensity": "Moderate",
+				"ShortPhrase": "An a.m. t-storm, then showers",
+				"LongPhrase": "Cloudy; a thunderstorm in the morning, then afternoon showers",
+				"PrecipitationProbability": 90,
+				"ThunderstormProbability": 54,
+				"RainProbability": 90,
+				"SnowProbability": 0,
+				"IceProbability": 0,
+				"Wind": {
+					"Speed": {
+						"Value": 5.8,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 89,
+						"Localized": "E",
+						"English": "E"
+					}
+				},
+				"WindGust": {
+					"Speed": {
+						"Value": 13.8,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 67,
+						"Localized": "ENE",
+						"English": "ENE"
+					}
+				},
+				"TotalLiquid": {
+					"Value": 0.26,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Rain": {
+					"Value": 0.26,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Snow": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Ice": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"HoursOfPrecipitation": 4.0,
+				"HoursOfRain": 4.0,
+				"HoursOfSnow": 0.0,
+				"HoursOfIce": 0.0,
+				"CloudCover": 100,
+				"Evapotranspiration": {
+					"Value": 0.08,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"SolarIrradiance": {
+					"Value": 2255.8,
+					"Unit": "W/m²",
+					"UnitType": 33
+				}
+			},
+			"Night": {
+				"Icon": 12,
+				"IconPhrase": "Showers",
+				"HasPrecipitation": true,
+				"PrecipitationType": "Rain",
+				"PrecipitationIntensity": "Moderate",
+				"ShortPhrase": "Showers around early; cloudy",
+				"LongPhrase": "A couple of evening showers; otherwise, cloudy",
+				"PrecipitationProbability": 72,
+				"ThunderstormProbability": 21,
+				"RainProbability": 72,
+				"SnowProbability": 0,
+				"IceProbability": 0,
+				"Wind": {
+					"Speed": {
+						"Value": 3.5,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 204,
+						"Localized": "SSW",
+						"English": "SSW"
+					}
+				},
+				"WindGust": {
+					"Speed": {
+						"Value": 10.4,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 176,
+						"Localized": "S",
+						"English": "S"
+					}
+				},
+				"TotalLiquid": {
+					"Value": 0.1,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Rain": {
+					"Value": 0.1,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Snow": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Ice": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"HoursOfPrecipitation": 2.0,
+				"HoursOfRain": 2.0,
+				"HoursOfSnow": 0.0,
+				"HoursOfIce": 0.0,
+				"CloudCover": 100,
+				"Evapotranspiration": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"SolarIrradiance": {
+					"Value": 14.9,
+					"Unit": "W/m²",
+					"UnitType": 33
+				}
+			},
+			"Sources": [
+				"AccuWeather"
+			],
+			"MobileLink": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?day=4&lang=en-us",
+			"Link": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?day=4&lang=en-us"
+		},
+		{
+			"Date": "2022-09-30T07:00:00+08:00",
+			"EpochDate": 1664492400,
+			"Sun": {
+				"Rise": "2022-09-30T05:43:00+08:00",
+				"EpochRise": 1664487780,
+				"Set": "2022-09-30T17:44:00+08:00",
+				"EpochSet": 1664531040
+			},
+			"Moon": {
+				"Rise": "2022-09-30T09:25:00+08:00",
+				"EpochRise": 1664501100,
+				"Set": "2022-09-30T21:03:00+08:00",
+				"EpochSet": 1664542980,
+				"Phase": "WaxingCrescent",
+				"Age": 4
+			},
+			"Temperature": {
+				"Minimum": {
+					"Value": 76.0,
+					"Unit": "F",
+					"UnitType": 18
+				},
+				"Maximum": {
+					"Value": 87.0,
+					"Unit": "F",
+					"UnitType": 18
+				}
+			},
+			"RealFeelTemperature": {
+				"Minimum": {
+					"Value": 82.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Very Warm"
+				},
+				"Maximum": {
+					"Value": 98.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Hot"
+				}
+			},
+			"RealFeelTemperatureShade": {
+				"Minimum": {
+					"Value": 82.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Very Warm"
+				},
+				"Maximum": {
+					"Value": 94.0,
+					"Unit": "F",
+					"UnitType": 18,
+					"Phrase": "Hot"
+				}
+			},
+			"HoursOfSun": 1.1,
+			"DegreeDaySummary": {
+				"Heating": {
+					"Value": 0.0,
+					"Unit": "F",
+					"UnitType": 18
+				},
+				"Cooling": {
+					"Value": 16.0,
+					"Unit": "F",
+					"UnitType": 18
+				}
+			},
+			"AirAndPollen": [
+				{
+					"Name": "AirQuality",
+					"Value": 0,
+					"Category": "Good",
+					"CategoryValue": 1,
+					"Type": "Ozone"
+				},
+				{
+					"Name": "Grass",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Mold",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Ragweed",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "Tree",
+					"Value": 0,
+					"Category": "Low",
+					"CategoryValue": 1
+				},
+				{
+					"Name": "UVIndex",
+					"Value": 3,
+					"Category": "Moderate",
+					"CategoryValue": 2
+				}
+			],
+			"Day": {
+				"Icon": 12,
+				"IconPhrase": "Showers",
+				"HasPrecipitation": true,
+				"PrecipitationType": "Rain",
+				"PrecipitationIntensity": "Light",
+				"ShortPhrase": "Some rain and a thunderstorm",
+				"LongPhrase": "Cloudy; occasional rain and a thunderstorm in the morning followed by a thunderstorm in spots in the afternoon",
+				"PrecipitationProbability": 70,
+				"ThunderstormProbability": 42,
+				"RainProbability": 70,
+				"SnowProbability": 0,
+				"IceProbability": 0,
+				"Wind": {
+					"Speed": {
+						"Value": 3.5,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 167,
+						"Localized": "SSE",
+						"English": "SSE"
+					}
+				},
+				"WindGust": {
+					"Speed": {
+						"Value": 10.4,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 154,
+						"Localized": "SSE",
+						"English": "SSE"
+					}
+				},
+				"TotalLiquid": {
+					"Value": 0.13,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Rain": {
+					"Value": 0.13,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Snow": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Ice": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"HoursOfPrecipitation": 1.5,
+				"HoursOfRain": 1.5,
+				"HoursOfSnow": 0.0,
+				"HoursOfIce": 0.0,
+				"CloudCover": 99,
+				"Evapotranspiration": {
+					"Value": 0.08,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"SolarIrradiance": {
+					"Value": 2264.1,
+					"Unit": "W/m²",
+					"UnitType": 33
+				}
+			},
+			"Night": {
+				"Icon": 7,
+				"IconPhrase": "Cloudy",
+				"HasPrecipitation": true,
+				"PrecipitationType": "Rain",
+				"PrecipitationIntensity": "Light",
+				"ShortPhrase": "A thunderstorm around early",
+				"LongPhrase": "Overcast; a thunderstorm in spots in the evening followed by a thundershower in spots late",
+				"PrecipitationProbability": 40,
+				"ThunderstormProbability": 24,
+				"RainProbability": 40,
+				"SnowProbability": 0,
+				"IceProbability": 0,
+				"Wind": {
+					"Speed": {
+						"Value": 2.3,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 88,
+						"Localized": "E",
+						"English": "E"
+					}
+				},
+				"WindGust": {
+					"Speed": {
+						"Value": 6.9,
+						"Unit": "mi/h",
+						"UnitType": 9
+					},
+					"Direction": {
+						"Degrees": 29,
+						"Localized": "NNE",
+						"English": "NNE"
+					}
+				},
+				"TotalLiquid": {
+					"Value": 0.06,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Rain": {
+					"Value": 0.06,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Snow": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"Ice": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"HoursOfPrecipitation": 1.0,
+				"HoursOfRain": 1.0,
+				"HoursOfSnow": 0.0,
+				"HoursOfIce": 0.0,
+				"CloudCover": 99,
+				"Evapotranspiration": {
+					"Value": 0.0,
+					"Unit": "in",
+					"UnitType": 1
+				},
+				"SolarIrradiance": {
+					"Value": 15.5,
+					"Unit": "W/m²",
+					"UnitType": 33
+				}
+			},
+			"Sources": [
+				"AccuWeather"
+			],
+			"MobileLink": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?day=5&lang=en-us",
+			"Link": "http://www.accuweather.com/en/ph/lucena-city/265720/daily-weather-forecast/265720?day=5&lang=en-us"
+		}
+	]
+}

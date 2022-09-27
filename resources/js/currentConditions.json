@@ -1,0 +1,25 @@
+[
+	{
+		"LocalObservationDateTime": "2022-09-23T13:45:00+08:00",
+		"EpochTime": 1663911900,
+		"WeatherText": "Mostly cloudy",
+		"WeatherIcon": 6,
+		"HasPrecipitation": false,
+		"PrecipitationType": null,
+		"IsDayTime": true,
+		"Temperature": {
+			"Metric": {
+				"Value": 29.6,
+				"Unit": "C",
+				"UnitType": 17
+			},
+			"Imperial": {
+				"Value": 85.0,
+				"Unit": "F",
+				"UnitType": 18
+			}
+		},
+		"MobileLink": "http://www.accuweather.com/en/ph/lucena-city/265720/current-weather/265720?lang=en-us",
+		"Link": "http://www.accuweather.com/en/ph/lucena-city/265720/current-weather/265720?lang=en-us"
+	}
+]

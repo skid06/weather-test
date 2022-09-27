@@ -1,0 +1,152 @@
+[
+    {
+        "Version": 1,
+        "Key": "127164",
+        "Type": "City",
+        "Rank": 10,
+        "LocalizedName": "Cairo",
+        "Country": {
+            "ID": "EG",
+            "LocalizedName": "Egypt"
+        },
+        "AdministrativeArea": {
+            "ID": "C",
+            "LocalizedName": "Cairo"
+        }
+    },
+    {
+        "Version": 1,
+        "Key": "243353",
+        "Type": "City",
+        "Rank": 11,
+        "LocalizedName": "Casablanca",
+        "Country": {
+            "ID": "MA",
+            "LocalizedName": "Morocco"
+        },
+        "AdministrativeArea": {
+            "ID": "06",
+            "LocalizedName": "Casablanca-Settat"
+        }
+    },
+    {
+        "Version": 1,
+        "Key": "58670",
+        "Type": "City",
+        "Rank": 13,
+        "LocalizedName": "Cangzhou",
+        "Country": {
+            "ID": "CN",
+            "LocalizedName": "China"
+        },
+        "AdministrativeArea": {
+            "ID": "HE",
+            "LocalizedName": "Hebei"
+        }
+    },
+    {
+        "Version": 1,
+        "Key": "353020",
+        "Type": "City",
+        "Rank": 20,
+        "LocalizedName": "Caracas",
+        "Country": {
+            "ID": "VE",
+            "LocalizedName": "Venezuela"
+        },
+        "AdministrativeArea": {
+            "ID": "A",
+            "LocalizedName": "Distrito Capital"
+        }
+    },
+    {
+        "Version": 1,
+        "Key": "306633",
+        "Type": "City",
+        "Rank": 20,
+        "LocalizedName": "Cape Town",
+        "Country": {
+            "ID": "ZA",
+            "LocalizedName": "South Africa"
+        },
+        "AdministrativeArea": {
+            "ID": "WC",
+            "LocalizedName": "Western Cape"
+        }
+    },
+    {
+        "Version": 1,
+        "Key": "111732",
+        "Type": "City",
+        "Rank": 21,
+        "LocalizedName": "Cali",
+        "Country": {
+            "ID": "CO",
+            "LocalizedName": "Colombia"
+        },
+        "AdministrativeArea": {
+            "ID": "VAC",
+            "LocalizedName": "Valle del Cauca"
+        }
+    },
+    {
+        "Version": 1,
+        "Key": "264875",
+        "Type": "City",
+        "Rank": 22,
+        "LocalizedName": "Caloocan",
+        "Country": {
+            "ID": "PH",
+            "LocalizedName": "Philippines"
+        },
+        "AdministrativeArea": {
+            "ID": "MNL",
+            "LocalizedName": "Metropolitan Manila"
+        }
+    },
+    {
+        "Version": 1,
+        "Key": "60597",
+        "Type": "City",
+        "Rank": 23,
+        "LocalizedName": "Cao County",
+        "Country": {
+            "ID": "CN",
+            "LocalizedName": "China"
+        },
+        "AdministrativeArea": {
+            "ID": "SD",
+            "LocalizedName": "Shandong"
+        }
+    },
+    {
+        "Version": 1,
+        "Key": "45883",
+        "Type": "City",
+        "Rank": 25,
+        "LocalizedName": "Campinas",
+        "Country": {
+            "ID": "BR",
+            "LocalizedName": "Brazil"
+        },
+        "AdministrativeArea": {
+            "ID": "SP",
+            "LocalizedName": "São Paulo"
+        }
+    },
+    {
+        "Version": 1,
+        "Key": "52479",
+        "Type": "City",
+        "Rank": 25,
+        "LocalizedName": "Calgary",
+        "Country": {
+            "ID": "CA",
+            "LocalizedName": "Canada"
+        },
+        "AdministrativeArea": {
+            "ID": "AB",
+            "LocalizedName": "Alberta"
+        }
+    }
+]
