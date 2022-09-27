@@ -15,7 +15,7 @@ export default function Dashboard(props) {
     const accuweather_key = props.accuweather_key
 
     const forecast = async () => {
-        fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/265720?details=true&apikey=${accuweather_key}`)
+        fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/328328?details=true&apikey=${accuweather_key}`)
             .then(response => response.json())
             .then(data => {
                 if(subscription == 0) {
@@ -48,7 +48,7 @@ export default function Dashboard(props) {
             errors={props.errors}
             header={
                 <h2 className="font-semibold text-center text-xl text-gray-800 leading-tight">
-                    Weather Forecasts
+                    London Weather Forecasts
                 </h2>
             }
         >
