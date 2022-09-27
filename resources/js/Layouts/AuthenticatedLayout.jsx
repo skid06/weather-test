@@ -22,14 +22,8 @@ export default function Authenticated({ auth, header, children }) {
                             </div>
 
                             <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <NavLink href={route('dashboard')} active={route().current('dashboard')}>
-                                    Dashboard
-                                </NavLink>
                                 <NavLink href={route('weather')} active={route().current('weather')}>
                                     Weather
-                                </NavLink>
-                                <NavLink href={route('profile')} active={route().current('profile')}>
-                                    Profile
                                 </NavLink>
                             </div>
                         </div>

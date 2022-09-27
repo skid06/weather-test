@@ -16,12 +16,13 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    // return Inertia::render('Welcome', [
+    //     'canLogin' => Route::has('login'),
+    //     'canRegister' => Route::has('register'),
+    //     'laravelVersion' => Application::VERSION,
+    //     'phpVersion' => PHP_VERSION,
+    // ]);
+    return Redirect::route('login');
 });
 
 Route::get('/dashboard', function () {
@@ -37,7 +38,8 @@ Route::get('/profile', function () {
 Route::get('/weather', function () {
     return Inertia::render('Weather', [
         'ip' => request()->ip(),
-        'subscription' => 0,// auth()->user()->subscription,
+        'accuweather_key' => env('ACCUWEATHER_KEY'),
+        'subscription' => env('USER_SUBSCRIPTION_KEY'),// auth()->user()->subscription,
     ]);
 })->middleware(['auth', 'verified'])->name('weather');
 

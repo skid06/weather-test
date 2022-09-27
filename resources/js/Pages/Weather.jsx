@@ -12,8 +12,10 @@ export default function Dashboard(props) {
 
     const { ip, subscription } = usePage().props
 
+    const accuweather_key = props.accuweather_key
+
     const forecast = async () => {
-        // fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/265720?details=true&apikey=jtHUlap8GSXGCIRJmkW7RXtDoQAKPhQx`)
+        // fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/265720?details=true&apikey=${accuweather_key}`)
         //     .then(response => response.json())
         //     .then(data => {
         //         if(subscription == 0) {
@@ -33,16 +35,6 @@ export default function Dashboard(props) {
 
     console.log(`subscription: ${days}`);
 
-
-    // useEffect(() => {
-    //     fetch(`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?q=${location}&apikey=jtHUlap8GSXGCIRJmkW7RXtDoQAKPhQx`)
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             setQueryResults(data)
-    //             console.log(`results from api: ${queryResults}`)
-    //         })    
-    //     console.log(`Location event ${queryResults}`);
-    // }, [location]);
 
     const onHandleChange = (event) => {
         setLocation(event.target.value)

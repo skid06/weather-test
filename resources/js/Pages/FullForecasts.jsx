@@ -12,47 +12,6 @@ export default function FullForecasts(props) {
 
     const { ip, subscription } = usePage().props
 
-    const forecast = async () => {
-        // fetch(`
-        //     http://dataservice.accuweather.com/forecasts/v1/hourly/24hour/265720?apikey=jtHUlap8GSXGCIRJmkW7RXtDoQAKPhQx        
-        // `)
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         if(subscription == 0) {
-        //             setDays(data.DailyForecasts.splice(0, 3));
-        //         } else if(subscription == 1) {
-        //             setDays(data.DailyForecasts);
-        //         } 
-        //     });
-        if(subscription == 0) {
-            setDays(weatherData.DailyForecasts.splice(0, 3));
-        } else if(subscription == 1) {
-            setDays(weatherData.DailyForecasts);
-        } 
-    }   
-
-    useEffect(() => forecast(), []);
-
-    console.log(`subscription: ${days}`);
-
-
-    // useEffect(() => {
-    //     fetch(`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?q=${location}&apikey=jtHUlap8GSXGCIRJmkW7RXtDoQAKPhQx`)
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             setQueryResults(data)
-    //             console.log(`results from api: ${queryResults}`)
-    //         })    
-    //     console.log(`Location event ${queryResults}`);
-    // }, [location]);
-
-    const onHandleChange = (event) => {
-        setLocation(event.target.value)
-    }
-    console.log(queryResults)
-    console.log(`ip: ${ip}`)
-    console.log('details:', props)
-
     const details = props.details
 
     const dayWeatherLogo = details.Day.Icon > 9 ? details.Day.Icon : '0' + details.Day.Icon
