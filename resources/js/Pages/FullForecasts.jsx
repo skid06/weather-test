@@ -23,7 +23,7 @@ export default function FullForecasts(props) {
             errors={props.errors}
             header={
                 <h2 className="font-semibold text-center text-xl text-gray-800 leading-tight">
-                    London's Weather on  {Moment(details.Date).format("M/D")}
+                    {details.location} Weather on  {Moment(details.Date).format("M/D")}
                 </h2>
             }
         >

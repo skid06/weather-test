@@ -4,18 +4,20 @@ import { Head, usePage, Link } from "@inertiajs/inertia-react";
 import Moment from "moment";
 // import Weather from "../Features/Weather";
 import weatherData from "../data.json";
+import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 
 export default function Dashboard(props) {
     const [days, setDays] = useState([]);
-    const [location, setLocation] = useState("");
-    const [queryResults, setQueryResults] = useState([]);
+    const [location, setLocation] = useState({id: "328328", name: "London"});
+    const [items, setItems] = useState([]);
+    const [query, setQuery] = useState("los angeles");
 
     const { ip, subscription } = usePage().props
 
     const accuweather_key = props.accuweather_key
 
     const forecast = async () => {
-        fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/328328?details=true&apikey=${accuweather_key}`)
+        fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${location.id}?details=true&apikey=${accuweather_key}`)
             .then(response => response.json())
             .then(data => {
                 if(subscription == 0) {
@@ -31,15 +33,41 @@ export default function Dashboard(props) {
         // } 
     }   
 
-    useEffect(() => forecast(), []);
+    const searchCities = async () => {
+        fetch(`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?q=${query}&apikey=${accuweather_key}`)
+            .then(response => response.json())
+            .then(data => {
+                setItems(data?.map(item => {
+                    return {id: item.Key, name: `${item.LocalizedName}, ${item.AdministrativeArea.ID}, ${item.Country.ID}`}
+                }))
+            })
+    }
 
-    console.log(`subscription: ${days}`);
+    useEffect(() => forecast(), [location]);
+    useEffect(() => searchCities(), [query]);
 
+
+      const handleOnSearch = (string, results) => {
+        // onSearch will have as the first callback parameter
+        // the string searched and for the second the results.
+        setQuery(string);
+        console.log('handle search', string, results)
+      }
+    
+      const handleOnSelect = (item) => {
+        // the item selected
+        setLocation(item)
+        console.log(item)
+      }
+    
+
+    console.log('formatted items', items)
+    console.log('selected location', location)
 
     const onHandleChange = (event) => {
         setLocation(event.target.value)
     }
-    console.log(queryResults)
+    // console.log(items)
     console.log(`ip: ${ip}`)
     
     return (
@@ -48,7 +76,7 @@ export default function Dashboard(props) {
             errors={props.errors}
             header={
                 <h2 className="font-semibold text-center text-xl text-gray-800 leading-tight">
-                    London Weather Forecasts
+                    Weather Forecasts of {location.name} 
                 </h2>
             }
         >
@@ -57,9 +85,17 @@ export default function Dashboard(props) {
             <div className="py-12">
                 <div className="max-w-5xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        {/* <div className="p-6 bg-white border-b border-gray-200">
-                            Weather Page
-                        </div> */}
+                        <div className="p-6 bg-white border-b border-gray-200">
+                            <ReactSearchAutocomplete
+                                items={items}
+                                onSearch={handleOnSearch}
+                                // onHover={handleOnHover}
+                                onSelect={handleOnSelect}
+                                // onFocus={handleOnFocus}
+                                autoFocus
+                                // formatResult={formatResult}
+                            />
+                        </div>
                         {/*  Start */}
                         <div className="text-white">
                             {/* <div className="places-input text-gray-800">
@@ -91,7 +127,7 @@ export default function Dashboard(props) {
                                                     <div className="w-1/4">
                                                         <div className="font-semibold mb-2 text-center">{day.Temperature.Maximum.Value}°F</div>
                                                         <div className="flex flex-row justify-center">
-                                                        <Link href="/full-forecasts" data={{details: day}}><span className="" width="96" height="96">View Full Forecast</span></Link>
+                                                        <Link href="/full-forecasts" data={{details: {...day, ...location.name}}}><span className="" width="96" height="96">View Full Forecast</span></Link>
                                                         </div>
                                                     </div>
                                                 </div> 
@@ -116,7 +152,7 @@ export default function Dashboard(props) {
                                                     <div className="w-1/4 text-center">
                                                         <div>Hi {day.Temperature.Maximum.Value}°F</div>
                                                         <div>Lo {day.Temperature.Minimum.Value}°F</div>                                                        
-                                                        <Link href="/full-forecasts" data={{details: day}}><span className="" width="96" height="96">View Full Forecast</span></Link>
+                                                        <Link href="/full-forecasts" data={{details: {...day, location: location.name}}}><span className="" width="96" height="96">View Full Forecast</span></Link>
                                                     </div>
                                                 </div>
                                             </div>
