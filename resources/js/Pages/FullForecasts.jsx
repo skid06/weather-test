@@ -82,7 +82,7 @@ export default function FullForecasts(props) {
                                                 <div className="basis-1/2 text-xl">
                                                     <img typeof="foaf:Image" src={`https://www.accuweather.com/images/weathericons/${dayWeatherLogo}.svg`} width="75" height="45" alt={details.Day.PrecipitationIntensity + details.Day.PrecipitationType} title={details.Day.PrecipitationIntensity + details.Day.PrecipitationType} />
                                                 </div>
-                                                <div div className="basis-1/2 text-5xl text-left m-4">{details.Temperature.Maximum.Value}°F</div>
+                                                <div div className="basis-1/2 text-5xl text-left m-4">{details.Temperature.Maximum.Value}°{details.Temperature.Maximum.Unit}</div>
                                             </div>
                                             <div className="w-1/4"></div>
                                         </div>

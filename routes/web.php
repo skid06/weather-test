@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\PlanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,26 +30,31 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/profile', function () {
-    return Inertia::render('Profile',[
+Route::get('/payment', function () {
+    return Inertia::render('Payment',[
         'intent' => auth()->user()->createSetupIntent()
     ]);
-})->middleware(['auth', 'verified'])->name('profile');
+})->middleware(['auth', 'verified'])->name('payment');
 
 Route::get('/weather', function () {
     return Inertia::render('Weather', [
         'ip' => request()->ip(),
         'accuweather_key' => env('ACCUWEATHER_KEY'),
-        'subscription' => env('USER_SUBSCRIPTION_KEY'),// auth()->user()->subscription,
+        'subscription' => auth()->user()->subscribed('Basic') ? 1 : (
+            auth()->user()->subscribed('Standard') ? 2 : (
+                auth()->user()->subscribed('Premium') ? 3 : 0
+            )
+        ),
     ]);
 })->middleware(['auth', 'verified'])->name('weather');
 
 Route::get('/full-forecasts', function () {
     return Inertia::render('FullForecasts', [
-        'ip' => request()->ip(),
-        'subscription' => 1,// auth()->user()->subscription,
         'details' => request()->details,
     ]);
 })->middleware(['auth', 'verified'])->name('full-forecasts');
+
+Route::middleware('auth:sanctum')->get('/plans', [PlanController::class, 'plans']);
+Route::post('/subscribe', [PlanController::class, 'subscribe'])->middleware(['auth', 'verified'])->name('subscribe');
 
 require __DIR__.'/auth.php';
