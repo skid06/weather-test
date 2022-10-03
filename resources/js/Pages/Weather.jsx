@@ -112,7 +112,7 @@ export default function Dashboard(props) {
                                                         <div className="w-1/4 text-sm text-gray-200">{Moment(day.Date).format('ddd')} <br /> {Moment(day.Date).format("M/D")}</div>
                                                         <div className="text-xl font-bold">{day.Day.IconPhrase}</div>
                                                         <div className="flex flex-row justify-center">
-                                                            <img typeof="foaf:Image" src={`https://www.accuweather.com/images/weathericons/${logo}.svg`} width="75" height="45" alt={day.Day.PrecipitationIntensity + day.Day.PrecipitationType} title={day.Day.PrecipitationIntensity + day.Day.PrecipitationType} />
+                                                            <img typeof="foaf:Image" src={`https://www.accuweather.com/images/weathericons/${logo}.svg`} width="75" height="45" alt={(day.Day.PrecipitationIntensity + day.Day.PrecipitationType).toString()} title={(day.Day.PrecipitationIntensity + day.Day.PrecipitationType).toString()} />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -139,7 +139,7 @@ export default function Dashboard(props) {
                                                 <div className="w-1/4 px-4 ">
                                                     <div className="flex flex-row font-semibold mb-2 text-center">{day.Day.PrecipitationIntensity} {day.Day.PrecipitationType}</div>
                                                     <div className="flex flex-row">
-                                                        <img typeof="foaf:Image" src={`https://www.accuweather.com/images/weathericons/${logo}.svg`} width="75" height="45" alt={day.Day.PrecipitationIntensity + day.Day.PrecipitationType} title={day.Day.PrecipitationIntensity + day.Day.PrecipitationType} />
+                                                        <img typeof="foaf:Image" src={`https://www.accuweather.com/images/weathericons/${logo}.svg`} width="75" height="45" alt={(day.Day.PrecipitationIntensity + day.Day.PrecipitationType).toString()} title={(day.Day.PrecipitationIntensity + day.Day.PrecipitationType).toString()} />
                                                     </div>
                                                     {/* <div className="flex flex-row">{day.Day.PrecipitationIntensity} {day.Day.PrecipitationType}</div> */}
                                                 </div>
