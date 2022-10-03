@@ -6,12 +6,6 @@ import Moment from "moment";
 // import details from "../fulldetails.json";
 
 export default function FullForecasts(props) {
-    const [days, setDays] = useState([]);
-    const [location, setLocation] = useState("");
-    const [queryResults, setQueryResults] = useState([]);
-
-    const { ip, subscription } = usePage().props
-
     const details = props.details
 
     const dayWeatherLogo = details.Day.Icon > 9 ? details.Day.Icon : '0' + details.Day.Icon

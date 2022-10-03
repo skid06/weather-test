@@ -16,8 +16,11 @@ export default function Dashboard(props) {
     const accuweather_key = props.accuweather_key
 
     const forecast = async () => {
-        const no_of_days = subscription == 3 ? '15day' : (
-            subscription == 2 ? '10day' : '5day')
+        // Use this code if using a paid version of accuweather api
+        // const no_of_days = subscription == 3 ? '15day' : (
+        //     subscription == 2 ? '10day' : '5day')
+
+        const no_of_days = '5day'
 
         fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/${no_of_days}/${location.id}?details=true&metric=true&apikey=${accuweather_key}`)
             .then(response => response.json())
@@ -31,9 +34,10 @@ export default function Dashboard(props) {
             .catch(err => console.log(err));
         // if(subscription == 0) {
         //     setDays(weatherData.DailyForecasts.splice(0, 3));
-        // } else if(subscription == 1) {
-        //     setDays(weatherData.DailyForecasts);
+        //     return;
         // } 
+        // setDays(weatherData.DailyForecasts);
+    
     }   
 
     const searchCities = async () => {
@@ -144,8 +148,9 @@ export default function Dashboard(props) {
                                                 </div>
                                                 <div className="w-1/4 text-center">
                                                     <div>Hi {day.Temperature.Maximum.Value}°{day.Temperature.Maximum.Unit}</div>
-                                                    <div>Lo {day.Temperature.Minimum.Value}°{day.Temperature.Maximum.Unit}</div>                                                        
-                                                    <Link href="/full-forecasts" data={{details: {...day, location: location.name}}}><span className="" width="96" height="96">View Full Forecast</span></Link>
+                                                    <div>Lo {day.Temperature.Minimum.Value}°{day.Temperature.Maximum.Unit}</div> 
+                                                    {subscription == 3 && <Link href="/full-forecasts" data={{details: {...day, location: location.name}}}><span className="" width="96" height="96">View Full Forecast</span></Link>}                                                       
+                                                    {subscription != 3 && <Link href="/payment"><span className="" width="96" height="96">To view Full Forecast, subscribe to Premium Plan.</span></Link>}
                                                 </div>
                                             </div>
                                         </div>

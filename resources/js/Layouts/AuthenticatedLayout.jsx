@@ -56,6 +56,12 @@ export default function Authenticated({ auth, header, children }) {
                                     </Dropdown.Trigger>
 
                                     <Dropdown.Content>
+                                        <Dropdown.Link href={route('user.update')} method="get" as="button">
+                                            Update Profile
+                                        </Dropdown.Link>
+                                        <Dropdown.Link href={route('payment')} method="get" as="button">
+                                            Payment Details
+                                        </Dropdown.Link>
                                         <Dropdown.Link href={route('logout')} method="post" as="button">
                                             Log Out
                                         </Dropdown.Link>
