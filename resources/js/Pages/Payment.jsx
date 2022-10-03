@@ -6,6 +6,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import Radiobox from '@/Components/Radiobox';
 import Plan from '@/Features/Plans/Plan';
+import UserInfo from '@/Features/Users/UserInfo';
 
 
 const Payment = (props) => {
@@ -85,7 +86,7 @@ const Payment = (props) => {
     }, []);
 
     console.log('Plans loaded', plans)  
-     
+
     const getStripePlan = (stripe_plan) => {
         setStripePlan(stripe_plan)
         console.log('Stripe plan loaded', stripe_plan);
@@ -112,15 +113,7 @@ const Payment = (props) => {
                           )}
                         </div>
                         <div className="flex flex-col w-full p-6 bg-white border-b border-gray-200">
-                            <div className="w-full flex justify-center">
-                                <div class="p-6 max-w-sm">
-                                    <a href="#">
-                                        <h5 class="mb-5 text-2xl font-bold tracking-tight text-black dark:text-black">Customer Details</h5>
-                                    </a>
-                                    <p class="mb-3 font-normal text-black">Name: {props.auth.user.name}</p>
-                                    <p class="mb-3 font-normal text-black">Email: {props.auth.user.email}</p>
-                                </div> 
-                            </div>
+                            <UserInfo user={props.auth.user} />
                             <div className="w-full flex flex-col justify-center">
                                 <div className="mx-2 mt-4 flex justify-center">
                                     <div className="p-2 w-1/2">
