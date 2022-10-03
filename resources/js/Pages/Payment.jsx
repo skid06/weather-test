@@ -42,7 +42,7 @@ const Payment = (props) => {
     };
 
     const processPayment = async () => {
-        // setPaymentProcessing(true);
+        setPaymentProcessing(true);
         const {paymentMethod, error} = await stripeInit.createPaymentMethod(
             'card', cardElementInit, {
                 billing_details: {
@@ -56,9 +56,16 @@ const Payment = (props) => {
         console.log('error', error)
         
         if (error) {
-            // setPaymentProcessing(false);
+            setPaymentProcessing(false);
+            alert(error.message)
             console.error(error);
+            return;
         } else {
+            if(!stripePlan) {
+                alert("Choose a plan.");
+                setPaymentProcessing(false);
+                return;
+            }
             console.log('paymentMethod',paymentMethod);
             // setPaymentProcessing(false);
             const requestOptions = {
@@ -71,9 +78,10 @@ const Payment = (props) => {
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
+                    setPaymentProcessing(false);
                 })
                 .catch((error) => {
-                    // paymentProcessing = false;
+                    setPaymentProcessing(false);
                     console.log(error);
                 });
         }
@@ -127,7 +135,7 @@ const Payment = (props) => {
                                     <button
                                         className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                                         onClick={processPayment}
-                                        // disabled={paymentProcessing}
+                                        disabled={paymentProcessing}
                                     >{paymentProcessing ? 'Processing' : 'Pay Now'}</button>
                                 </div>
                             </div>
