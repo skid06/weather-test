@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { loadStripe } from '@stripe/stripe-js';
 
-const Checkout = ({ user, plans, setStripeNotification, setSubscription }) => {
+const Checkout = ({ user, setSubscription, setStripeNotification, stripePlan, plans }) => {
     const [paymentProcessing, setPaymentProcessing] = useState(false);
-    const [stripePlan, setStripePlan] = useState("");
     const [stripeInit, setStripeInit] = useState("");
     const [cardElementInit, setCardElementInit] = useState("");
 
@@ -62,7 +61,7 @@ const Checkout = ({ user, plans, setStripeNotification, setSubscription }) => {
                 .catch((error) => {
                     setPaymentProcessing(false);
                     setStripeNotification({message: error, status: true, type: 'danger' });
-                    // console.log(error);
+                    console.log(error);
                 });
         }
     };

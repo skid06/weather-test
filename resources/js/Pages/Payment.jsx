@@ -70,12 +70,13 @@ const Payment = (props) => {
                         </div>
                         <div className="flex flex-col w-full p-6 bg-white">
                             <UserInfo user={props.auth.user} />
-                            <Checkout 
+                            {subscription !== 3 && <Checkout 
                                 user={props.auth.user} 
                                 setSubscription={setSubscription} 
                                 setStripeNotification={setStripeNotification}
+                                stripePlan={stripePlan}
                                 plans={plans}
-                            />
+                            />}
                         </div>
                         <StripeNotifications closePopUpNotification={closePopUpNotification} notifications={stripeNotification} />
                     </div>
